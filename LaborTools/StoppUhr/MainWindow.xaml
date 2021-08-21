@@ -1,0 +1,53 @@
+﻿<Window x:Class="StoppUhr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="StoppUhr" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition Width="35" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="2" Grid.RowSpan="2" Content="CountDown Starten" FontSize="16pt"  />
+        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="5" Grid.RowSpan="2" Content="Starten" FontSize="16pt"  />
+    </Grid>
+</Window>
