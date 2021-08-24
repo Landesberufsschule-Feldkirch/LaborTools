@@ -47,7 +47,9 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="2" Grid.RowSpan="2" Content="CountDown Starten" FontSize="16pt"  />
-        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="5" Grid.RowSpan="2" Content="Starten" FontSize="16pt"  />
+        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="2" Grid.RowSpan="2" Content="CountDown Starten" Command="{Binding BtnTaster}" CommandParameter="CountDown" FontSize="16pt"  />
+        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="5" Grid.RowSpan="2" Content="Starten" Command="{Binding BtnTaster}" CommandParameter="Start" FontSize="16pt"  />
+        <Button Grid.Column="14" Grid.ColumnSpan="3" Grid.Row="10" Grid.RowSpan="2" Content="Stop" Command="{Binding BtnTaster}" CommandParameter="Stop" FontSize="16pt"  />
+        <Button Grid.Column="18" Grid.ColumnSpan="3" Grid.Row="10" Grid.RowSpan="2" Content="Reset" Command="{Binding BtnTaster}" CommandParameter="Reset" FontSize="16pt" />
     </Grid>
 </Window>

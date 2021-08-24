@@ -17,9 +17,17 @@ namespace StoppUhr.ViewModel
             System.Threading.Tasks.Task.Run(VisuAnzeigenTask);
         }
 
-        internal void Taster(object obj)
+        internal void Taster(object id)
         {
-            throw new NotImplementedException();
+            if (id is not string str) return;
+            
+
+            switch (str)
+            {
+                case "Stop": break;
+
+                default: throw new ArgumentOutOfRangeException(nameof(id));
+            }
         }
 
         private void VisuAnzeigenTask()

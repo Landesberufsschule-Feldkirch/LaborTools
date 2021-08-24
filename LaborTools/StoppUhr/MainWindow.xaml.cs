@@ -7,6 +7,7 @@
             var viewModel = new ViewModel.ViewModel(this);
 
             InitializeComponent();
+            DataContext = viewModel;
         }
     }
 }
