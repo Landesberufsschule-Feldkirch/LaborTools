@@ -2,12 +2,13 @@
 {
     public partial class MainWindow
     {
+        public readonly ViewModel.ViewModel ViewModel;
         public MainWindow()
         {
-            var viewModel = new ViewModel.ViewModel(this);
+            ViewModel = new ViewModel.ViewModel();
 
             InitializeComponent();
-            DataContext = viewModel;
+            DataContext = ViewModel;
         }
     }
 }

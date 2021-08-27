@@ -47,9 +47,15 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="2" Grid.RowSpan="2" Content="CountDown Starten" Command="{Binding BtnTaster}" CommandParameter="CountDown" FontSize="16pt"  />
-        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="5" Grid.RowSpan="2" Content="Starten" Command="{Binding BtnTaster}" CommandParameter="Start" FontSize="16pt"  />
-        <Button Grid.Column="14" Grid.ColumnSpan="3" Grid.Row="10" Grid.RowSpan="2" Content="Stop" Command="{Binding BtnTaster}" CommandParameter="Stop" FontSize="16pt"  />
-        <Button Grid.Column="18" Grid.ColumnSpan="3" Grid.Row="10" Grid.RowSpan="2" Content="Reset" Command="{Binding BtnTaster}" CommandParameter="Reset" FontSize="16pt" />
+        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="2" Grid.RowSpan="2" Content="CountDown Starten" Command="{Binding BtnTaster}" CommandParameter="CountDown" FontSize="16pt" IsEnabled="{Binding ViAnz.ButtonEnabled[0]}"  Visibility="{Binding ViAnz.SichtbarEin[0]}" />
+        <Button Grid.Column="2" Grid.ColumnSpan="7" Grid.Row="5" Grid.RowSpan="2" Content="Starten" Command="{Binding BtnTaster}" CommandParameter="Start" FontSize="16pt" IsEnabled="{Binding ViAnz.ButtonEnabled[1]}"  Visibility="{Binding ViAnz.SichtbarEin[1]}"/>
+        <Button Grid.Column="14" Grid.ColumnSpan="3" Grid.Row="10" Grid.RowSpan="2" Content="Reset" Command="{Binding BtnTaster}" CommandParameter="Reset" FontSize="16pt" IsEnabled="{Binding ViAnz.ButtonEnabled[2]}"  Visibility="{Binding ViAnz.SichtbarEin[2]}"/>
+        <Button Grid.Column="18" Grid.ColumnSpan="3" Grid.Row="10" Grid.RowSpan="2" Content="Stop" Command="{Binding BtnTaster}" CommandParameter="Stop" FontSize="16pt" IsEnabled="{Binding ViAnz.ButtonEnabled[3]}"  Visibility="{Binding ViAnz.SichtbarEin[3]}"/>
+
+        <Label  Grid.Column="10" Grid.ColumnSpan="12" Grid.Row="1"  Grid.RowSpan="8" Content="{Binding ViAnz.CountDownAnzeige}"  FontSize="150pt" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="{Binding ViAnz.SichtbarEin[10]}"/>
+
+        <Label Grid.Column="10" Grid.ColumnSpan="6" Grid.Row="3" Grid.RowSpan="3" Content="Zykluszeit:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30pt" Visibility="{Binding ViAnz.SichtbarEin[20]}"/>
+        <TextBox Grid.Column="17" Grid.ColumnSpan="2" Grid.Row="3" Grid.RowSpan="3" Text="{Binding ViAnz.ZykluszeitText, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" FontSize="30pt" Visibility="{Binding ViAnz.SichtbarEin[20]}" />
+
     </Grid>
 </Window>

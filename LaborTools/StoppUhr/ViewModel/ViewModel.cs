@@ -1,5 +1,5 @@
-﻿using System.Windows.Input;
-using StoppUhr.Commands;
+﻿using StoppUhr.Commands;
+using System.Windows.Input;
 
 namespace StoppUhr.ViewModel
 {
@@ -8,10 +8,10 @@ namespace StoppUhr.ViewModel
         public Model.StoppUhr StoppUhr { get; }
         public VisuAnzeigen ViAnz { get; set; }
 
-        public ViewModel(MainWindow mainWindow)
+        public ViewModel()
         {
             StoppUhr = new Model.StoppUhr();
-            ViAnz = new VisuAnzeigen(mainWindow, StoppUhr);
+            ViAnz = new VisuAnzeigen(StoppUhr);
         }
 
         private ICommand _btnTaster;
